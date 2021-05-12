@@ -16,4 +16,12 @@ Each product has the following properties:
 5.	Creation Date.
 
 The user can:
+1. View the products list.
+2. Add new product.
+3. Edit product.
+4. Delete existing product.
+5. Search for product in the product list.
+6. Select according to which parameter the products list will be sorted.
+
+All changes in the list are automatically saved to the browser’s local storage.
 
