@@ -33,7 +33,7 @@ In the right side of the screen there is a form that the user can fill and uploa
 5. Search product by product name.
 6. Sort products by: created date, price and name.
 7. All changes in the list are automatically saved to the browser’s local storage.
-8. When clicking on an item, the app will display a ‘details’ view of the product on the right side of the screen.
+8. When clicking on an item, the app will display a details view of the product on the right side of the screen.
 9. After each edit, the product item in the list will reflect the changes only after the save succeeds. 
 10. Validation tests of inputs values when user try to save new product.
 11. Display 4 products on each page. Allow moving to the next and previous pages.
