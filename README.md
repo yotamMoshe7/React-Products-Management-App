@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# React-Products-Management-App
+A products list management app, using React js, Redux, Firebase and Local Storage.
+The product list is persisted across page loads, Display 4 products on each page and allow moving to the next and previous pages.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Link to app:
+https://yotammoshe7.github.io/React-Products-Management-App/
 
-## Available Scripts
+## Image for illustration
+![‏‏לכידה](https://user-images.githubusercontent.com/57434735/118008387-ac586b80-b355-11eb-83e8-335888294ea1.PNG)
 
-In the project directory, you can run:
+## Description
+The app displays the store’s list of products. 
+Each product has the following properties:
+1.	ID.
+2.	Image (Upload and download from Firebase).
+3.	Name.
+4.	Description.
+5.	Price.
+6.	Creation date.
 
-### `yarn start`
+Functionality:
+1. View the product list.
+2. Add new product.
+3. Edit product.
+4. Delete existing product.
+5. Search for product in the product list.
+6. Select according to which parameter the product list will be sorted (last added, price and name).
+7. All changes in the list are automatically saved to the browser’s local storage.
+8. When clicking on an item, the web will display a ‘details’ view of the product on the right side of the screen.
+9. A validation test when user try to upload new product.
+10. Ability to filter the list by typing free text into a text box control. The list will display only products whose name or description contain the search text.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Operating Instructions
+1. Download the code.
+2. Open the terminal.
+3. Type 'npm install'.
+4. Type 'npm start'.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Enjoy!
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
