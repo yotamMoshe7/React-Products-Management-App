@@ -25,6 +25,16 @@ The app contain a list of products, each product has the following properties:
 ### Form
 In the right side of the screen there is a form that the user can fill and upload a new product.
 
+### Functionality
+1. View the product list.
+2. Add new Product.
+3. Edit existing product.
+4. Delete existing product.
+5. Search product by product name.
+6. Sort products by: created date, price and name.
+7. All changes in the list are automatically saved to the browser’s local storage.
+8. 
+
 
 
 
