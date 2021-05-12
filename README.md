@@ -27,7 +27,7 @@ Functionality:
 6. Select according to which parameter the product list will be sorted (last added, price and name).
 7. All changes in the list are automatically saved to the browser’s local storage.
 8. When clicking on an item, the web will display a ‘details’ view of the product on the right side of the screen.
-9. A validation when user try to upload new product.
+9. A validation test when user try to upload new product.
 10. Ability to filter the list by typing free text into a text box control. The list will display only products whose name or description contain the search text.
 
 ## Operating Instructions
