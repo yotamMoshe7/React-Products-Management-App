@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/React-Product-Management-App/precache-manifest.7badd0fe618b0db1919658f7c05b6de3.js"
+  "/React-Products-Management-App/precache-manifest.082dc3bda6c0fdb137ff931731c2648e.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/React-Product-Management-App/index.html", {
+workbox.routing.registerNavigationRoute("/React-Products-Management-App/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
