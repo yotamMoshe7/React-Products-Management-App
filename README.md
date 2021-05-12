@@ -15,3 +15,5 @@ Each product has the following properties:
 4.	Price.
 5.	Creation Date.
 
+The user can:
+
