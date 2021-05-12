@@ -29,7 +29,7 @@
   display: flex;
   align-items: center;
   width: 90%;
-  height: 35%;
+  height: 33%;
   font-size: 2vw;
   border: none;
   color: white;
@@ -39,11 +39,11 @@
 }
 
 #description {
-  height: 55%;
+  height: 60%;
   width: 95%;
   border: none;
   resize: none;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   background-color: transparent;
   font-family: 'Kalam', cursive;
   color: rgb(182, 174, 174);
