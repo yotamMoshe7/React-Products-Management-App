@@ -1,6 +1,6 @@
 # React-Products-Management-App
 A products list management app, using React js, Redux, Firebase and Local Storage.
-The product list is persisted across page loads.
+The product list is persisted across page loads, Display 4 products on each page. Allow moving to the next and previous pages.
 
 ## Link to app:
 https://yotammoshe7.github.io/React-Products-Management-App/
@@ -18,13 +18,23 @@ Each product has the following properties:
 5.	Price.
 6.	Creation Date.
 
-The user can:
+Functionality:
 1. View the product list.
 2. Add new product.
 3. Edit product.
 4. Delete existing product.
 5. Search for product in the product list.
-6. Select according to which parameter the product list will be sorted.
+6. Select according to which parameter the product list will be sorted (last added, price and name).
+7. All changes in the list are automatically saved to the browser’s local storage.
+8. When clicking on an item, the web will display a ‘details’ view of the product on the right side of the screen.
+9. A validation when user try to upload new product.
+10. Ability to filter the list by typing free text into a text box control. The list will display only products whose name or description contain the search text.
 
-All changes in the list are automatically saved to the browser’s local storage.
+## Operating Instructions
+1. Download the code.
+2. Open the terminal.
+3. Type 'npm install'.
+4. Type 'npm start'.
+
+## Enjoy!
 
