@@ -16,7 +16,7 @@ Each product has the following properties:
 3.	Name.
 4.	Description.
 5.	Price.
-6.	Creation Date.
+6.	Creation date.
 
 Functionality:
 1. View the product list.
