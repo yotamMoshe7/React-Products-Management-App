@@ -38,7 +38,13 @@ In the right side of the screen there is a form that the user can fill and uploa
 10. Validation tests of inputs values when user try to save new product.
 11. Display 4 products on each page. Allow moving to the next and previous pages.
 
+### Operation Instructions
+1. Download the code.
+2. Open terminal.
+3. Type 'npm install'.
+4. Type 'npm start'.
 
+### Enjoy!
 
 
 
