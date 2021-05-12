@@ -1,0 +1,13 @@
+#page-number-wrapper {
+  display: flex;
+  justify-content: center;
+  font-size: 2vw;
+  margin-top: 1.2vw;
+}
+
+#page-number {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: 'Fredoka One', cursive;
+}
