@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "1b7d2f3cdee5e72a6256",
-    "url": "/React-Products-Management-App/static/css/main.ef7ca36a.chunk.css"
+    "revision": "f95b4cc140d50f8e8812",
+    "url": "/React-Products-Management-App/static/css/main.1ce96ccb.chunk.css"
   },
   {
-    "revision": "1b7d2f3cdee5e72a6256",
+    "revision": "f95b4cc140d50f8e8812",
     "url": "/React-Products-Management-App/static/js/main.a06850a4.chunk.js"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/React-Products-Management-App/static/media/addImageIcon.786809da.webp"
   },
   {
-    "revision": "6670f6278028d4ab78b0f60cf5ea632f",
+    "revision": "93856b2b6d156cb64db125ca949af95a",
     "url": "/React-Products-Management-App/index.html"
   }
 ];
