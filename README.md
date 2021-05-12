@@ -9,9 +9,9 @@ https://yotammoshe7.github.io/React-Products-Management-App/
 
 ## Description
 ### Top Bar
-Add Buton - add new product.
-Search Field - Filter list of product by the input.
-Select Box - Choose the parameter according to which the list will be sorted (date, price, title).
+Add Buton - open form for adding new product. 
+Search Field - Filter list of product by the input. 
+Select Box - Choose the parameter according to which the list will be sorted (date, price, title). 
 
 ### List Of Products
 The app contain a list of products, each product has the following properties:
