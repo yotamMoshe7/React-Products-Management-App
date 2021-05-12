@@ -1,6 +1,6 @@
 # React-Products-Management-App
 A products list management app, using React js, Redux, Firebase and Local Storage.
-The product list is persisted across page loads, Display 4 products on each page. Allow moving to the next and previous pages.
+The product list is persisted across page loads, Display 4 products on each page and allow moving to the next and previous pages.
 
 ## Link to app:
 https://yotammoshe7.github.io/React-Products-Management-App/
