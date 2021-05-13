@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# React Products Management App
+A product list management app, persisted across page loads, using React JS, Redux, CSS, Firebase and Local Storage.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Link To App
+https://yotammoshe7.github.io/React-Products-Management-App/
 
-## Available Scripts
+## Image For Illustration
+![‏‏לכידה](https://user-images.githubusercontent.com/57434735/118008387-ac586b80-b355-11eb-83e8-335888294ea1.PNG)
 
-In the project directory, you can run:
+## Description
+### Top Bar
+Add Buton - open form for adding new product.  
+Search Field - filter/search list of product by the input.  
+Select Box - Choose the parameter according to which the list will be sorted (date, price, title).  
 
-### `yarn start`
+### List Of Products
+The app contain a list of products, each product has the following properties:
+1.	ID.
+2.	Image (upload and download to and from Firebase). 
+3.	Name.
+4.	Description.
+5.	Price.
+6.	Creation date.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Form
+In the right side of the screen there is a form that the user can fill and upload a new product.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Functionality
+1. View the product list.
+2. Add new Product.
+3. Edit existing product.
+4. Delete existing product.
+5. Search product by product name.
+6. Sort products by: created date, price and name.
+7. All changes in the list are automatically saved to the browser’s local storage.
+8. When clicking on an item, the app will display a details view of the product on the right side of the screen.
+9. After each edit, the product item in the list will reflect the changes only after the save succeeds. 
+10. Validation tests of inputs values when user try to save new product.
+11. Display 4 products on each page. Allow moving to the next and previous pages.
 
-### `yarn test`
+### Operation Instructions
+1. Download the code.
+2. Open terminal.
+3. Type 'npm install'.
+4. Type 'npm start'.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Enjoy!
