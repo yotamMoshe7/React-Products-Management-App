@@ -108,8 +108,8 @@
   }
 
   #image {
-    width: 90%;
-    height: 50%;
+    width: 95%;
+    height: 60%;
     border-radius: 15px 15px;
   }
 
@@ -177,7 +177,7 @@
     height: 35%;
     width: 110%;
     background-color: rgb(179, 110, 26);
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: bold;
     font-family: 'Fredoka One', cursive;
     border-radius: 15px 15px;

@@ -62,7 +62,7 @@ input:focus {
   #add-button {
     background-color: rgb(179, 110, 26);
     color: black;
-    font-size: 2vh;
+    font-size: 1.7vh;
     height: 100%;
     width: 90%;
     font-family: 'Fredoka One', cursive;
@@ -83,6 +83,6 @@ input:focus {
 
   #sort-by {
     width: 100%;
-    font-size: 3vw;
+    font-size: 2vw;
   }
 }
