@@ -1,0 +1,39 @@
+.no-products-message {
+  color: white;
+  font-size: 5vw;
+  text-align: center;
+  width: 45vw;
+  font-family: 'Kalam', cursive;
+}
+
+.products-display-container-wrapper {
+  margin-top: 1%;
+  padding-left: 5%;
+  display: flex;
+}
+
+.products-display-container {
+  width: 45vw;
+  height: 32vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .no-products-message {
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    width: 60vw;
+    font-family: 'Kalam', cursive;
+  }
+
+  .products-display-container-wrapper {
+    margin-top: 1%;
+    padding-left: 5%;
+    display: flex;
+  }
+
+  .products-display-container {
+    width: 55vw;
+    height: 60vh;
+  }
+}
