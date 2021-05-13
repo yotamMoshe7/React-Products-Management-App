@@ -6,3 +6,14 @@
   font-family: 'Bangers', cursive;
   color: white;
 }
+
+@media only screen and (max-width: 600px) {
+  #topBar {
+    background-color: rgb(12, 12, 12);
+    width: 95%;
+    padding-left: 5%;
+    font-size: 4vh;
+    font-family: 'Bangers', cursive;
+    color: white;
+  }
+}

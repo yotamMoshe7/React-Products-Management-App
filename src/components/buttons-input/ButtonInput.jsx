@@ -26,7 +26,7 @@ export const ButtonInput = ({
   return (
     <div id='buttons-input-wrapper'>
       <div id='add-button-wrapper' onClick={addButtonClick}>
-        <button id='add-button'>+ Add</button>
+        <button id='add-button'>Add +</button>
       </div>
       <div id='input-wrapper'>
         <input

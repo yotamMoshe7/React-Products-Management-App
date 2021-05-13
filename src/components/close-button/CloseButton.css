@@ -1,0 +1,11 @@
+.colse-button {
+  color: 'Black';
+  font-size: 3vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .colse-button {
+    color: 'Black';
+    font-size: 4vw;
+  }
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import './CloseButton.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWindowClose } from '@fortawesome/free-solid-svg-icons';
 
@@ -19,12 +20,8 @@ export const CloseButton = ({
     <div onClick={closeButtonClicked}>
       <FontAwesomeIcon
         icon={faWindowClose}
-        style={{
-          fontSize: '2em',
-          color: 'Black',
-          position: 'absolute',
-          right: '0px',
-        }}
+        style={{ position: 'absolute', right: '0px' }}
+        className='colse-button'
       />
     </div>
   );
