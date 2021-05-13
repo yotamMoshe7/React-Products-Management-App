@@ -50,3 +50,39 @@ textarea:focus,
 input:focus {
   outline: none;
 }
+
+@media only screen and (max-width: 600px) {
+  #buttons-input-wrapper {
+    width: 55vw;
+    padding-left: 5%;
+    margin-top: 1%;
+    display: flex;
+  }
+
+  #add-button {
+    background-color: rgb(179, 110, 26);
+    color: black;
+    font-size: 2vh;
+    height: 100%;
+    width: 90%;
+    font-family: 'Fredoka One', cursive;
+    border-radius: 15px 15px;
+  }
+
+  #input {
+    width: 90%;
+    border-radius: 15px 15px 15px 15px;
+    font-size: 2vw;
+  }
+
+  #sort-by-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #sort-by {
+    width: 100%;
+    font-size: 3vw;
+  }
+}

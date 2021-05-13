@@ -89,3 +89,97 @@
   font-family: 'Fredoka One', cursive;
   border-radius: 15px 15px;
 }
+
+@media only screen and (max-width: 600px) {
+  #element-wrapper {
+    width: 100%;
+    height: calc(24% - 1px);
+    border: solid 1px white;
+    display: flex;
+    margin-bottom: 1%;
+    position: relative;
+  }
+
+  #image-wrapper {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+  }
+
+  #image {
+    width: 90%;
+    height: 50%;
+    border-radius: 15px 15px;
+  }
+
+  #details-wrapper {
+    height: 100%;
+    width: 55%;
+  }
+
+  #title {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+    font-size: 3vw;
+    border: none;
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    background-color: transparent;
+    resize: none;
+  }
+
+  #description {
+    height: 60%;
+    width: 80%;
+    border: none;
+    resize: none;
+    font-size: 2.3vw;
+    background-color: transparent;
+    font-family: 'Kalam', cursive;
+    color: rgb(182, 174, 174);
+  }
+
+  #date {
+    width: 15%;
+    height: 20%;
+    position: absolute;
+    right: 2vw;
+    top: 6vw;
+    font-family: 'Neucha', cursive;
+    font-size: 2.3vw;
+    color: rgb(182, 174, 174);
+  }
+
+  #delete-button-wrapper {
+    height: 100%;
+    width: 11vw;
+    position: relative;
+  }
+
+  #price {
+    width: 90%;
+    height: 30%;
+    position: absolute;
+    right: 2vw;
+    top: 0vw;
+    font-family: 'Neucha', cursive;
+    font-size: 2.3vw;
+    color: rgb(182, 174, 174);
+  }
+
+  #delete-button {
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    height: 35%;
+    width: 110%;
+    background-color: rgb(179, 110, 26);
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: 'Fredoka One', cursive;
+    border-radius: 15px 15px;
+  }
+}
