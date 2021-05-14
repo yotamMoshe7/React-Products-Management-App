@@ -2,19 +2,13 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Form.css';
 import { connect } from 'react-redux';
 import { initialProductArray } from '../../redux/items/items.actions';
-
-// Utilities
 import { inputsValidation, emptyProductObject } from '../../utility/Utility';
-
-// Functions for managing local storage
 import {
   addProductToaLastAddedLocalStorage,
   updateProductInLastAddedLocalStorage,
   generateIdFromLocalStorage,
   getLastAddedProductsList,
 } from '../../utility/LocalStorageManagement';
-
-// Componnets
 import { ProductImage } from '../product-image/ProductImage';
 import { CloseButton } from '../close-button/CloseButton';
 
@@ -52,9 +46,9 @@ const DisplayElement = ({
       setProduct(emptyProductObject);
       setMarkProductId(null);
     }
-  }, [addButtonClick, finishSaveProduct, setMarkProductId]);
+  }, [addButtonClick, finishSaveProduct]);
 
-  // Update form when product in products list has been clicked
+  // Update form with product data when product in products list has been clicked
   useEffect(() => {
     // Get product from list
     let productToDisplay = currentItems.find(
@@ -97,7 +91,7 @@ const DisplayElement = ({
     }
   }, [product, initialProductArray, selectSort]);
 
-  // Create Product
+  // Create new Product
   useEffect(() => {
     setFinishSaveProduct(false);
 
@@ -114,11 +108,10 @@ const DisplayElement = ({
         // Add product to local storage lists
         addProductToaLastAddedLocalStorage(product);
 
-        // Get relevant update products list elements and update state
+        // Get update products list elements and update state
         let updateArray = getLastAddedProductsList();
         initialProductArray(updateArray, selectSort);
 
-        // addItem(product, selectSort);
         setFinishSaveProduct(true);
         saveNewProduct.current = false;
       } else {
@@ -132,7 +125,9 @@ const DisplayElement = ({
     if (markProductId !== null) {
       updateExistProduct.current = true;
       setProduct({ ...product, date: new Date() });
-    } else {
+    }
+    // When product need to be save
+    else {
       saveNewProduct.current = true;
       setProduct({
         ...product,
