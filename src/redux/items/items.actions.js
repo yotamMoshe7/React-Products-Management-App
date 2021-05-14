@@ -1,6 +1,6 @@
 import ItemActionType from './items.type';
 
-export const initialProductArray = (itemsArray) => ({
+export const initialProductArray = (productsArray, selectSort) => ({
   type: ItemActionType.INITIAL_ITEMS_ARRAY,
-  payload: itemsArray,
+  payload: { productsArray: productsArray, selectSort: selectSort },
 });

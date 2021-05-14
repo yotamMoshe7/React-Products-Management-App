@@ -41,15 +41,15 @@ export const ProductImage = ({ product, setProduct }) => {
   }, [url]);
 
   return (
-    <div id='display-image-wrapper'>
+    <div className='display-image-wrapper'>
       <img
-        id='display-image'
+        className='display-image'
         alt='product illustration'
         style={{ padding: product.imageUrl === null ? '0.2vw' : null }}
         src={product.imageUrl === null ? defaultIcon : product.imageUrl}
         onClick={handleClick}
       />
-      <label id='uploade-image'>
+      <label className='uploade-image'>
         <FontAwesomeIcon
           icon={faUpload}
           style={{ marginLeft: '1vw', width: '2.5vw', height: '2.5vw' }}

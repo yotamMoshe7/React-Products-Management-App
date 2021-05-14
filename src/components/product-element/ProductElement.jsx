@@ -35,33 +35,33 @@ const ProductElement = ({
 
   return (
     <div
-      id='element-wrapper'
+      className='element-wrapper'
       style={{
         backgroundColor: markProductId === id ? 'rgb(11, 43, 11)' : null,
       }}
       onClick={productClicked}
     >
-      <div id='image-wrapper'>
+      <div className='image-wrapper'>
         <img
-          id='image'
+          className='image'
           src={productDetails.imageUrl}
           alt='product illustration'
         />
       </div>
-      <div id='details-wrapper'>
-        <textarea id='title' disabled value={productDetails.title} />
+      <div className='details-wrapper'>
+        <textarea className='title' disabled value={productDetails.title} />
         <textarea
-          id='description'
+          className='description'
           disabled={true}
           value={productDetails.description}
         />
       </div>
-      <div id='date'>
+      <div className='date'>
         {productDetails.date !== null ? formatDate(productDetails.date) : null}
       </div>
-      <div id='delete-button-wrapper'>
-        <div id='price'>{productDetails.price}$</div>
-        <button id='delete-button' onClick={deleteButtonClicked}>
+      <div className='delete-button-wrapper'>
+        <div className='price'>{productDetails.price}$</div>
+        <button className='delete-button' onClick={deleteButtonClicked}>
           delete button
         </button>
       </div>

@@ -1,4 +1,4 @@
-#topBar {
+.topBar {
   background-color: rgb(12, 12, 12);
   width: 95%;
   padding-left: 5%;
@@ -8,7 +8,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  #topBar {
+  .topBar {
     background-color: rgb(12, 12, 12);
     width: 95%;
     padding-left: 5%;

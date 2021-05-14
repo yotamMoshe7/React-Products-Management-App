@@ -59,3 +59,45 @@ export const filterListResults = (product, searchField) => {
     return true;
   } else return false;
 };
+
+// Compare implementation depends on select value
+
+export const compareHighestPrice = (product1, product2) => {
+  if (parseInt(product1.price) < parseInt(product2.price)) {
+    return -1;
+  }
+  if (parseInt(product1.price) > parseInt(product2.price)) {
+    return 1;
+  }
+  return 0;
+};
+
+export const compareLowestPrice = (product1, product2) => {
+  if (parseInt(product1.price) > parseInt(product2.price)) {
+    return -1;
+  }
+  if (parseInt(product1.price) < parseInt(product2.price)) {
+    return 1;
+  }
+  return 0;
+};
+
+export const compareLastAdded = (product1, product2) => {
+  if (parseInt(product1.date) < parseInt(product2.date)) {
+    return -1;
+  }
+  if (parseInt(product1.date) > parseInt(product2.date)) {
+    return 1;
+  }
+  return 0;
+};
+
+export const compareTitle = (product1, product2) => {
+  if (parseInt(product1.date) < parseInt(product2.date)) {
+    return -1;
+  }
+  if (parseInt(product1.date) > parseInt(product2.date)) {
+    return 1;
+  }
+  return 0;
+};

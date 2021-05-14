@@ -10,12 +10,8 @@ import { inputsValidation, emptyProductObject } from '../../utility/Utility';
 import {
   addProductToaLastAddedLocalStorage,
   updateProductInLastAddedLocalStorage,
-  addProductToPriceSortedLocalStorage,
-  updateProductInPriceSortedLocalStorage,
-  addProductToTitleSortedLocalStorage,
-  updateProductInTitleSortedLocalStorage,
   generateIdFromLocalStorage,
-  getListFromLocalStorage,
+  getLastAddedProductsList,
 } from '../../utility/LocalStorageManagement';
 
 // Componnets
@@ -88,12 +84,10 @@ const DisplayElement = ({
       if (validationResult === null) {
         // Update product to local storage lists
         updateProductInLastAddedLocalStorage(product);
-        updateProductInPriceSortedLocalStorage(product);
-        updateProductInTitleSortedLocalStorage(product);
 
-        // Get relevant update products list elements and update state
-        let updateArray = getListFromLocalStorage(selectSort);
-        initialProductArray(updateArray);
+        // Get update products list elements and update state
+        let updateArray = getLastAddedProductsList();
+        initialProductArray(updateArray, selectSort);
 
         setFinishSaveProduct(true);
         updateExistProduct.current = false;
@@ -119,12 +113,10 @@ const DisplayElement = ({
       if (validationResult === null) {
         // Add product to local storage lists
         addProductToaLastAddedLocalStorage(product);
-        addProductToPriceSortedLocalStorage(product);
-        addProductToTitleSortedLocalStorage(product);
 
         // Get relevant update products list elements and update state
-        let updateArray = getListFromLocalStorage(selectSort);
-        initialProductArray(updateArray);
+        let updateArray = getLastAddedProductsList();
+        initialProductArray(updateArray, selectSort);
 
         // addItem(product, selectSort);
         setFinishSaveProduct(true);
@@ -151,8 +143,8 @@ const DisplayElement = ({
   };
 
   return addButtonClick || markProductId !== null ? (
-    <div id='prducts-display-wrapper'>
-      <div id='prducts-display-sub-wrapper'>
+    <div className='prducts-display-wrapper'>
+      <div className='prducts-display-sub-wrapper'>
         <CloseButton
           setAddButtonClick={setAddButtonClick}
           setMarkProductId={setMarkProductId}
@@ -166,7 +158,7 @@ const DisplayElement = ({
 
         <div className='display-title'>Title</div>
         <input
-          id='product-name'
+          className='product-name'
           name='title'
           type='text'
           onChange={handleChange}
@@ -175,25 +167,25 @@ const DisplayElement = ({
 
         <div className='display-title'>Description</div>
         <textarea
-          id='product-description'
+          className='product-description'
           name='description'
           value={product.description}
           onChange={handleChange}
         />
 
         <div className='display-title'>Price</div>
-        <div id='bottom-wrapper'>
+        <div className='bottom-wrapper'>
           <input
-            id='product-price'
+            className='product-price'
             name='price'
             type='number'
             value={product.price}
             onChange={handleChange}
           />
-          <div id='error-wrapper'>
-            <div id='error-message'>{errorMessage}</div>
+          <div className='error-wrapper'>
+            <div className='error-message'>{errorMessage}</div>
           </div>
-          <button id='save-button' onClick={saveButtonClicked}>
+          <button className='save-button' onClick={saveButtonClicked}>
             Save
           </button>
         </div>
@@ -203,8 +195,8 @@ const DisplayElement = ({
 };
 
 const mapDispatchToProps = (dispatch) => ({
-  initialProductArray: (itemsArray) =>
-    dispatch(initialProductArray(itemsArray)),
+  initialProductArray: (itemsArray, selectSort) =>
+    dispatch(initialProductArray(itemsArray, selectSort)),
 });
 
 const mapStateToProps = (state) => ({

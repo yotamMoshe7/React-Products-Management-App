@@ -3,10 +3,8 @@ import './ProductsList.css';
 import { NUM_OF_PRODUCTS_IN_PAGE } from '../../utility/Constants';
 import { filterListResults } from '../../utility/Utility';
 import {
-  deleteProductInPriceSortedLocalStorage,
   deleteProductInLastAddedLocalStorage,
-  deleteProductInTitleSortedLocalStorage,
-  getListFromLocalStorage,
+  getLastAddedProductsList,
 } from '../../utility/LocalStorageManagement';
 import { connect } from 'react-redux';
 import { initialProductArray } from '../../redux/items/items.actions';
@@ -29,10 +27,10 @@ const ProductsList = ({
   const isFirstArrayInitialize = useRef(true);
   const finishDeleteProduct = useRef(false);
 
-  // When select change, get the relevant list from local storage
+  // When select change, update list order by selectSort value
   useEffect(() => {
-    let productsArray = getListFromLocalStorage(selectSort);
-    initialProductArray(productsArray);
+    let productsArray = getLastAddedProductsList();
+    initialProductArray(productsArray, selectSort);
     setPage(1);
   }, [selectSort, initialProductArray]);
 
@@ -79,13 +77,9 @@ const ProductsList = ({
 
       // Update lists in local storage and update state
       deleteProductInLastAddedLocalStorage(productToDelete);
-      deleteProductInPriceSortedLocalStorage(productToDelete);
-      deleteProductInTitleSortedLocalStorage(productToDelete);
+      let updateArray = getLastAddedProductsList();
 
-      // Get relevant update products list elements and update state
-      let updateArray = getListFromLocalStorage(selectSort);
-
-      initialProductArray(updateArray);
+      initialProductArray(updateArray, selectSort);
 
       // Avoid from second delete
       finishDeleteProduct.current = true;
@@ -121,13 +115,13 @@ const ProductsList = ({
   };
 
   return (
-    <div id='products-display-container-wrapper'>
+    <div className='products-display-container-wrapper'>
       <div>
         {filteredProductList.length === 0 && !isFirstArrayInitialize.current ? (
-          <div id='no-products-message'>No Products</div>
+          <div className='no-products-message'>No Products</div>
         ) : (
           <div>
-            <div id='products-display-container'>
+            <div className='products-display-container'>
               {filteredProductList.length > 0
                 ? createPageProductsElements()
                 : null}
@@ -157,8 +151,8 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  initialProductArray: (itemsArray) =>
-    dispatch(initialProductArray(itemsArray)),
+  initialProductArray: (itemsArray, selectSort) =>
+    dispatch(initialProductArray(itemsArray, selectSort)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductsList);

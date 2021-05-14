@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './App.css';
 import { TopBar } from './components/top-bar/TopBar';
 import { ButtonInput } from './components/buttons-input/ButtonInput';
 import ProductsList from './components/products-list/ProductsList';

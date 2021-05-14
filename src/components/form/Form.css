@@ -1,4 +1,4 @@
-#prducts-display-wrapper {
+.prducts-display-wrapper {
   width: 43%;
   height: 32vw;
   border: solid 2px black;
@@ -8,7 +8,7 @@
   border-radius: 15px 15px;
 }
 
-#prducts-display-sub-wrapper {
+.prducts-display-sub-wrapper {
   width: 90%;
   height: 95%;
   position: absolute;
@@ -24,14 +24,14 @@
   font-family: 'Fredoka One', cursive;
 }
 
-#product-name {
+.product-name {
   border: solid 2px black;
   height: 7%;
   width: 99%;
   font-size: 1.2vw;
 }
 
-#product-description {
+.product-description {
   border: solid 2px black;
   height: 30%;
   width: 99%;
@@ -39,23 +39,23 @@
   resize: none;
 }
 
-#bottom-wrapper {
+.bottom-wrapper {
   display: flex;
   height: 7%;
   width: 100%;
 }
 
-#product-price {
+.product-price {
   border: solid 2px black;
   height: 100%;
   width: 20%;
 }
 
-#error-wrapper {
+.error-wrapper {
   width: 60%;
 }
 
-#error-message {
+.error-message {
   font-size: 1.5vw;
   height: 100%;
   font-family: 'Bangers', cursive;
@@ -67,7 +67,7 @@
   margin-right: 0.2vw;
 }
 
-#save-button {
+.save-button {
   width: 20%;
   height: 100%;
   background-color: rgb(179, 110, 26);
@@ -78,7 +78,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  #prducts-display-wrapper {
+  .prducts-display-wrapper {
     width: 36%;
     height: 59vh;
     border: solid 2px black;
@@ -90,12 +90,11 @@
 
   .display-title {
     font-size: 3vw;
-    /* margin-top: 2vh; */
     resize: none;
     font-family: 'Fredoka One', cursive;
   }
 
-  #product-name {
+  .product-name {
     border: solid 2px black;
     height: 7%;
     width: 90%;
@@ -103,7 +102,7 @@
     margin-top: 1.5vh;
   }
 
-  #product-description {
+  .product-description {
     border: solid 2px black;
     height: 30%;
     width: 90%;
@@ -112,23 +111,23 @@
     margin-top: 1.5vh;
   }
 
-  #bottom-wrapper {
+  .bottom-wrapper {
     display: flex;
     width: 100%;
   }
 
-  #product-price {
+  .product-price {
     border: solid 2px black;
     width: 30%;
     font-size: 3vw;
     margin-top: 1.5vh;
   }
 
-  #error-wrapper {
+  .error-wrapper {
     width: 60%;
   }
 
-  #error-message {
+  .error-message {
     font-size: 3vw;
     font-family: 'Bangers', cursive;
     display: flex;
@@ -140,7 +139,7 @@
     margin-top: 8vh;
   }
 
-  #save-button {
+  .save-button {
     width: 40%;
     background-color: rgb(179, 110, 26);
     border-radius: 15px 15px;

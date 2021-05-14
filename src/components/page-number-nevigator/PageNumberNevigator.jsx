@@ -15,7 +15,7 @@ export const PageNumberNevigator = ({ page, setPage, filteredProductList }) => {
   };
 
   return (
-    <div id='page-number-wrapper'>
+    <div className='page-number-wrapper'>
       <div onClick={page > 1 ? leftPagesNavigateClicked : null}>
         <FontAwesomeIcon
           icon={faAngleLeft}
@@ -26,7 +26,7 @@ export const PageNumberNevigator = ({ page, setPage, filteredProductList }) => {
           }}
         />
       </div>
-      <div id='page-number'> {page} </div>
+      <div className='page-number'> {page} </div>
 
       <div
         onClick={

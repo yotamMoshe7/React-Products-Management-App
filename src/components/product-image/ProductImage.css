@@ -1,4 +1,4 @@
-#display-image-wrapper {
+.display-image-wrapper {
   display: flex;
   height: 20%;
   width: 80%;
@@ -6,21 +6,21 @@
   display: flex;
 }
 
-#display-image {
+.display-image {
   width: 20%;
   height: 90%;
   border: solid 2px rgb(12, 12, 12);
   border-radius: 15px 15px;
 }
 
-#uploade-image {
+.uploade-image {
   display: flex;
   align-items: center;
   height: 100%;
 }
 
 @media only screen and (max-width: 600px) {
-  #display-image-wrapper {
+  .display-image-wrapper {
     display: flex;
     height: 15%;
     width: 80%;
@@ -28,7 +28,7 @@
     display: flex;
   }
 
-  #display-image {
+  .display-image {
     width: 50%;
     height: 70%;
     border: solid 2px rgb(12, 12, 12);
